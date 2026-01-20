@@ -1,0 +1,61 @@
+:root {
+    --font-family: 'Markazi Text', serif;
+}
+.heroContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "article image";
+    height: 408px;
+    background-color: #495E57;
+    color: white;
+    padding: 20px;
+    font-family: var(--font-family);
+}
+
+.HeroImage {
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    height: 50vh;
+    grid-area: image;
+    margin: 0 auto;
+}
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.location {
+    font-size: 1.8rem;
+}
+
+.description {
+
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.article {
+    grid-area: article;
+    align-self: center;
+    padding-left: 50px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 767px) {
+    .heroContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "article"
+            "image";
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .article {
+        padding: 20px 0;
+    }
+    .HeroImage {
+        height: auto;
+        width: 80%;
+    }
+}

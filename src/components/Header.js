@@ -1,15 +1,17 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <header>
-            <img src="./logo.png" alt="Website Logo" />
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#reservations">Reservations</a></li>
-                    <li><a href="#order-online">Order online</a></li>
-                    <li><a href="#logout">Logout</a></li>
+            <img class="logo" src="./logo.png" alt="Website Logo" />
+            <nav className="navbar">
+                <ul className="nav-links">
+                    <li><Link to="#home">Home</Link></li>
+                    <li><Link to="#about">About</Link></li>
+                    <li><Link to="#menu">Menu</Link></li>
+                    <li><Link to="#reservations">Reservations</Link></li>
+                    <li><Link to="#order-online">Order online</Link></li>
+                    <li><Link to="#logout">Logout</Link></li>
                 </ul>
             </nav>
         </header>
