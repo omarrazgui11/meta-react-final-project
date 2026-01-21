@@ -4,7 +4,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/HomePage.css';
-
+import heroImage from '../assets/HeroSection.jpg';
 // Try to import Main if it exists, otherwise use a fallback
 let Main;
 try {
@@ -32,7 +32,7 @@ const HomePage = () => {
           </div>
           <div className="hero-image">
             <img 
-              src="/images/restaurant-hero.jpg" 
+              src={heroImage}
               alt="Little Lemon Restaurant dining area" 
               className="hero-img"
               onError={(e) => {
